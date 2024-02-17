@@ -1,0 +1,3 @@
+[submodule "third_party/HetuML"]
+	path = third_party/HetuML
+	url = https://github.com/ccchengff/HetuML.git

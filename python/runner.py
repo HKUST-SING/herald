@@ -57,8 +57,9 @@ def ssh_connect(host, identify_file):
         conf = config.lookup(host)
         ssh.connect(
             hostname=conf["hostname"],
-            port=conf["port"],
-            username=conf["user"],
+            #! make sure to use the correct port and user for ssh
+            # port=conf["port"],
+            # username=conf["user"],
             pkey=private,
         )
         yield ssh
