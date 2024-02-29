@@ -9,6 +9,5 @@ test_time/
 CIFAR_10/
 CIFAR_100/
 update.sh
-cmake/config.cmake
 .cache/
 __pycache__/

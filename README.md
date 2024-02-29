@@ -31,6 +31,8 @@ See the simple distributed configuration file [here](examples/config/dist.yml).
 
 Before running the experiment, your need to correctly configure the `DMLC` and `NCCL` environment variables and other `mpi` related parameters in the `runner.py` and `run_hetu.py` files. For example, you need to set the `DMLC_INTERFACE` to the network interface that the workers and the parameter server can communicate with each other. You also need to set the `NCCL_SOCKET_IFNAME` to allow NCCL find the correct network interface.
 
+Besides, make sure you have placed the dataset at `examples/datasets/` and created the directories for logging. For convinience, we provide some datasets at [Onedrive](https://1drv.ms/f/s!Aql5xCW4xT_lgyz9897LJoGbb6Gw?e=QSUMYb).
+
 ```bash
 # run hetu
 python3 ./python/runner.py -c examples/config/dist.yml python3 ./examples/ctr/run_hetu.py --model wdl_criteo --comm Hybrid --cache lru --bound 0 --bsp 0 --nepoch 1 --all --batch-size 256 --embedding-size 512 --cache-limit-ratio 0.1
