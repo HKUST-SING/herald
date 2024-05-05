@@ -1,0 +1,6 @@
+1. docker need ssh 
+apt install openssh-server openssh-client
+service sshd restart
+
+2. run server in remote machine
+- need to fixed the PYTHONPATH issue

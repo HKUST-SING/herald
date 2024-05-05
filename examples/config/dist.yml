@@ -1,0 +1,8 @@
+nodes:
+- chief: true
+  host: 10.2.12.200
+  workers: 1
+- host: 10.0.12.200
+  workers: 1
+- host: 10.2.11.210
+  servers: 1

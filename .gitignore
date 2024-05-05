@@ -1,0 +1,23 @@
+*.pyc
+*.csv
+*.tar.gz*
+*.pkl.gz
+.dataset
+build/
+test_time/
+.vscode/
+CIFAR_10/
+CIFAR_100/
+update.sh
+cmake/config.cmake
+
+# cpp lsp stuff
+.cache/
+.ccls-cache/
+
+# dist config
+config/*.yml
+# generated tmp stuff
+config/config
+config/hostips
+config/hostnames
