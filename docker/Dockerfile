@@ -150,3 +150,7 @@ RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 2
 
 # install boost 
 RUN apt install -y libboost-all-dev
+
+# install gtest
+RUN apt install -y libgtest-dev
+RUN cd /usr/src/gtest && mkdir -p build && cd build && cmake .. && make && make install
